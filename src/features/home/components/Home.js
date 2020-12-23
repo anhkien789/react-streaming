@@ -15,7 +15,9 @@ class Home extends React.Component {
       <div className="container">
         <div className="grid-container">
           <div className="grid-item">
-            <img className="fileimage" src={sintelImage} alt="Film photo" />
+            <div className="element-image">
+              <img className="filmimage" src={sintelImage} alt="Film photo" />
+            </div>
             <div className="description">
               <h2>SINTEL</h2>
               <h3>Năm: 2010</h3>
@@ -36,7 +38,9 @@ class Home extends React.Component {
             </div>
           </div>
           <div className="grid-item">
-            <img className="fileimage" src={sintelImage} alt="Film photo" />
+            <div className="element-image">
+              <img className="filmimage" src={sintelImage} alt="Film photo" />
+            </div>
             <div className="description">
               <h2>SINTEL</h2>
               <h3>Năm: 2010</h3>
@@ -52,7 +56,9 @@ class Home extends React.Component {
             </div>
           </div>
           <div className="grid-item">
-            <img className="fileimage" src={sintelImage} alt="Film photo" />
+            <div className="element-image">
+              <img className="filmimage" src={sintelImage} alt="Film photo" />
+            </div>
             <div className="description">
               <h2>SINTEL</h2>
               <h3>Năm: 2010</h3>
@@ -68,7 +74,9 @@ class Home extends React.Component {
             </div>
           </div>
           <div className="grid-item">
-            <img className="fileimage" src={sintelImage} alt="Film photo" />
+            <div className="element-image">
+              <img className="filmimage" src={sintelImage} alt="Film photo" />
+            </div>
             <div className="description">
               <h2>SINTEL</h2>
               <h3>Năm: 2010</h3>
