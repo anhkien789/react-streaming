@@ -50,13 +50,13 @@ class Videoplayer extends React.Component {
           <div className="settings-description">
             <h1>Sintel</h1>
             <h2>
-              Bộ phim mở màn với cảnh một cô gái có tên gọi là Sintel bị tấn
-              công khi đang đi qua rìa núi trong mùa đông băng giá. Sau khi đánh
-              bại kẻ đã tấn công cô và đoạt lấy cây giáo của hắn, cô ẩn náu
-              trong một túp lều của một vị pháp sư. Ông hỏi cô lý do vì sao đến
-              đây và cô thú nhận rằng đang tìm kiếm một con rồng, sau đó bộ phim
-              chuyển sang cảnh hồi tưởng. Sintel vốn là một cô gái đơn côi,
-              không gia đình...
+              Nội dung Phim: Bộ phim mở màn với cảnh một cô gái có tên gọi là
+              Sintel bị tấn công khi đang đi qua rìa núi trong mùa đông băng
+              giá. Sau khi đánh bại kẻ đã tấn công cô và đoạt lấy cây giáo của
+              hắn, cô ẩn náu trong một túp lều của một vị pháp sư. Ông hỏi cô lý
+              do vì sao đến đây và cô thú nhận rằng đang tìm kiếm một con rồng,
+              sau đó bộ phim chuyển sang cảnh hồi tưởng. Sintel vốn là một cô
+              gái đơn côi, không gia đình...
             </h2>
           </div>
         </div>

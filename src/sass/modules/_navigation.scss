@@ -120,8 +120,62 @@ nav {
     min-height: 200px;
     background-color: darken($white, 15%);
 
-    @include break(0, 500px) {
+    @include break(0, 760px) {
       display: none;
+    }
+
+    .grid-footer {
+      display: grid;
+      @include break(1200px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      @include break(760px, 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      gap: 10px 10px;
+
+      .grid-footer-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h5 {
+          color: $darkblue;
+          @include break(1200px) {
+            font-size: 1.5rem;
+          }
+          @include break(760px, 1200px) {
+            font-size: 1rem;
+          }
+          @include break(450px, 760px) {
+            font-size: 0.8rem;
+          }
+          @include break(0, 450px) {
+            font-size: 0.6rem;
+          }
+        }
+      }
+
+      .grid-footer-items ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        a {
+          @include break(1200px) {
+            font-size: 1.2rem;
+          }
+          @include break(760px, 1200px) {
+            font-size: 1.2rem;
+          }
+          @include break(450px, 760px) {
+            font-size: 1rem;
+          }
+          @include break(0, 450px) {
+            font-size: 1rem;
+          }
+        }
+      }
     }
   }
 }
