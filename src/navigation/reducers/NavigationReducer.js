@@ -1,7 +1,7 @@
 import { SHOW_PAGE } from "../actions/types.js";
 
 const initialState = {
-  showPage: "",
+  showPage: "Home",
 };
 
 const NavigationReducer = (state = initialState, action) => {

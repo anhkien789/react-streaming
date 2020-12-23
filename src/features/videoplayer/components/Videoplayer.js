@@ -9,6 +9,8 @@ import "video.js/dist/video-js.css";
 const videoJsOptions = {
   autoplay: false,
   controls: true,
+  // aspectRatio: "2:1",
+  fluid: true,
   sources: [
     {
       src: "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8",
@@ -37,14 +39,25 @@ class Videoplayer extends React.Component {
   render() {
     return (
       <div className="container">
-        <div className="settings">
+        <div className="settings-video">
           <div data-vjs-player>
             <video
-              width={1000}
-              height={500}
+              // style={{ width: "100%", height: "50vh" }}
               ref={(node) => (this.videoNode = node)}
               className="video-js vjs-default-skin"
             ></video>
+          </div>
+          <div className="settings-description">
+            <h1>Sintel</h1>
+            <h2>
+              Bộ phim mở màn với cảnh một cô gái có tên gọi là Sintel bị tấn
+              công khi đang đi qua rìa núi trong mùa đông băng giá. Sau khi đánh
+              bại kẻ đã tấn công cô và đoạt lấy cây giáo của hắn, cô ẩn náu
+              trong một túp lều của một vị pháp sư. Ông hỏi cô lý do vì sao đến
+              đây và cô thú nhận rằng đang tìm kiếm một con rồng, sau đó bộ phim
+              chuyển sang cảnh hồi tưởng. Sintel vốn là một cô gái đơn côi,
+              không gia đình...
+            </h2>
           </div>
         </div>
       </div>

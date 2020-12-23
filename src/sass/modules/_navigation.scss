@@ -20,7 +20,7 @@ nav {
 
   .branding {
     display: none;
-    @include break(500px) {
+    @include break(1000px) {
       display: flex;
       height: 25%;
       width: 25%;

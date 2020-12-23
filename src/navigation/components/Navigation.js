@@ -9,7 +9,6 @@ import * as HomeAction from "../../features/home/actions/HomeAction.js";
 class Navigation extends React.Component {
   handleChangeHome(e) {
     this.props.showPage("Home");
-
     this.props.resetPlayer();
   }
 

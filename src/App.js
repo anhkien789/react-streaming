@@ -19,7 +19,7 @@ class App extends React.Component {
           <div>
             <Phimmoi />
           </div>
-        ) : this.props.showPage === "Home" ||
+        ) : this.props.showPage === "Home" &&
           this.props.showPlayer === "Sintel" ? (
           <div>
             <Videoplayer />
