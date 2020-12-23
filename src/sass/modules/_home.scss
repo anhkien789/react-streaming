@@ -1,0 +1,18 @@
+.grid-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 10px;
+
+  .grid-item {
+    display: flex;
+  }
+
+  .grid-item .description {
+    margin-left: 1em;
+  }
+
+  .grid-item .fileimage {
+    width: 50%;
+  }
+}

@@ -9,25 +9,25 @@ class Footer extends React.Component {
         <div className="container">
           <ul>
             <li>
-              <a href="#jumbotron">Jumbotron</a>
+              <a href="#phimlemoi">Phim Lẻ Mới</a>
             </li>
             <li>
-              <a href="#palette">Palette</a>
+              <a href="#phimbomoi">Phim Bộ Mới</a>
             </li>
             <li>
-              <a href="#buttons">Buttons</a>
+              <a href="#phimchieurap">Phim Chiếu Rạp</a>
             </li>
             <li>
-              <a href="#typography">Typography</a>
+              <a href="#phimkinhdien">Phim Kinh Điển</a>
             </li>
             <li>
-              <a href="#lists">Lists</a>
+              <a href="#phimsapchieu">Phim Sắp Chiếu</a>
             </li>
             <li>
-              <a href="#media">Media</a>
+              <a href="#phimhanhdong">Phim Hành Động</a>
             </li>
             <li>
-              <a href="#tables">Tables</a>
+              <a href="#phimkiemhiep">Phim Kiếm Hiệp</a>
             </li>
           </ul>
         </div>

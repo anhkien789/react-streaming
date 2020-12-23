@@ -3,33 +3,54 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import logo from "../../images/LOGO_ADT.png";
 
+import * as Action from "../actions/NavigationAction.js";
+import * as HomeAction from "../../features/home/actions/HomeAction.js";
+
 class Navigation extends React.Component {
+  handleChangeHome(e) {
+    this.props.showPage("Home");
+
+    this.props.resetPlayer();
+  }
+
+  handleChangePhimmoi(e) {
+    this.props.showPage("Phimmoi");
+    this.props.resetPlayer();
+  }
+
   render() {
     return (
       <nav>
         <div className="container">
           <div className="nav-flex">
             <div className="branding">
-              <img className="logo" src={logo} alt="logo" />
+              <a onClick={this.handleChangeHome.bind(this)} href="#home">
+                <img className="logo" src={logo} alt="logo" />
+              </a>
             </div>
             <ul>
               <li>
-                <a href="#jumbotron">Jumbotron</a>
+                <a
+                  onClick={this.handleChangePhimmoi.bind(this)}
+                  href="#phimmoi"
+                >
+                  Phim Mới
+                </a>
               </li>
               <li>
-                <a href="#typography">Typography</a>
+                <a href="#theloai">Thể loại</a>
               </li>
               <li>
-                <a href="#buttons">Buttons</a>
+                <a href="#quocgia">Quốc Gia</a>
               </li>
               <li>
-                <a href="#lists">Lists</a>
+                <a href="#phimle">Phim Lẻ</a>
               </li>
               <li>
-                <a href="#media">Media</a>
+                <a href="#phimbo">Phim Bộ</a>
               </li>
               <li>
-                <a href="#tables">Tables</a>
+                <a href="#phimchieurap">Phim Chiếu Rạp</a>
               </li>
             </ul>
           </div>
@@ -40,7 +61,13 @@ class Navigation extends React.Component {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({}, dispatch);
+  return bindActionCreators(
+    {
+      showPage: Action.showPage,
+      resetPlayer: HomeAction.resetPlayer,
+    },
+    dispatch
+  );
 }
 
 // Call state from HistoryReducer
