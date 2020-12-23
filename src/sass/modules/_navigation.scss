@@ -1,0 +1,80 @@
+nav {
+  header & {
+    background-color: darken($white, 15%);
+  }
+
+  //   .branding {
+  //     float: left;
+  //     display: none;
+  //     @include break(1000px) {
+  //       display: block;
+  //     }
+  //   }
+  .nav-flex {
+    display: none;
+    @include break(500px) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .branding {
+    display: none;
+    @include break(500px) {
+      display: flex;
+      height: 25%;
+      width: 25%;
+    }
+  }
+
+  .branding .logo {
+    height: 50%;
+    width: 50%;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include clearfix;
+    display: none;
+    @include break(500px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  ul li {
+    @include break(760px) {
+      float: right;
+    }
+    padding: 10px 5px;
+  }
+
+  ul li a {
+    text-decoration: none;
+    padding: 10px 5px;
+    color: $darkblue;
+
+    &:hover {
+      color: $yellow;
+    }
+
+    header &:hover {
+      background-color: darken($blue, 20%);
+    }
+
+    footer & {
+      color: $darkblue;
+    }
+  }
+  footer & {
+    margin-top: 20px;
+    min-height: 200px;
+    background-color: darken($white, 15%);
+
+    @include break(0, 500px) {
+      display: none;
+    }
+  }
+}

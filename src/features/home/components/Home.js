@@ -4,7 +4,7 @@ import { bindActionCreators } from "redux";
 
 class Home extends React.Component {
   render() {
-    return <div>This is Home Page</div>;
+    return <div>This is places to show grid cards</div>;
   }
 }
 

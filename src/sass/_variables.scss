@@ -1,0 +1,24 @@
+//Font, Color and Breakpoints
+
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Josefin+Slab&family=Merriweather&family=Open+Sans&family=Oswald&family=Roboto+Slab&display=swap");
+
+$white: white;
+$offwhite: #eee8d6;
+$darkblue: #022933;
+$yellow: #ffba00;
+$blue: #0076a3;
+$green: #548c27;
+$orange: #f39856;
+$red: #d14348;
+$purple: #6d73c2;
+
+$color-main: $darkblue;
+$color-backgrounds: $white;
+$color-headlines: $red;
+
+$font-main: Merriweather, Helvetica, sans-serif;
+$font-highlight: "Bree Serif", Helvetica, sans-serif;
+
+$small: 450px;
+$medium: 760px;
+$large: 1200px;
