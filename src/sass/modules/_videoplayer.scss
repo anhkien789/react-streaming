@@ -2,4 +2,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .settings-description {
+    h1 {
+      @include break(1200px) {
+        font-size: 4rem;
+      }
+      @include break(760px, 1200px) {
+        font-size: 3.5rem;
+      }
+      @include break(450px, 760px) {
+        font-size: 3rem;
+      }
+      @include break(0, 450px) {
+        font-size: 2.5rem;
+      }
+    }
+    h2 {
+      @include break(1200px) {
+        font-size: 3rem;
+      }
+      @include break(760px, 1200px) {
+        font-size: 2.6rem;
+      }
+      @include break(450px, 760px) {
+        font-size: 2.2rem;
+      }
+      @include break(0, 450px) {
+        font-size: 2rem;
+      }
+    }
+  }
 }

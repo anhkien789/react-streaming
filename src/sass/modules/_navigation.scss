@@ -12,29 +12,46 @@ nav {
   //   }
   .nav-flex {
     display: none;
-    @include break(500px) {
+    @include break(1200px) {
       display: flex;
-      flex-direction: row;
+      align-items: center;
+    }
+    @include break(760px, 1200px) {
+      display: flex;
+      align-items: center;
+    }
+    @include break(450px, 760px) {
+      display: flex;
+      flex-direction: column;
+    }
+    @include break(0, 450px) {
+      display: flex;
+      flex-direction: column;
     }
   }
 
   .branding {
     display: none;
-    @include break(1000px) {
+    @include break(1200px) {
       display: flex;
       height: 25%;
       width: 25%;
     }
+    @include break(0, 760px) {
+      display: flex;
+      height: 50%;
+      width: 50%;
+    }
   }
 
   .branding a {
-    height: 50%;
-    width: 50%;
+    height: 75%;
+    width: 75%;
   }
 
   .branding .logo {
-    height: 50%;
-    width: 50%;
+    height: 75%;
+    width: 75%;
   }
 
   ul {
@@ -43,15 +60,28 @@ nav {
     padding: 0;
     @include clearfix;
     display: none;
-    @include break(500px) {
+    @include break(1200px) {
       display: flex;
       align-items: center;
+    }
+    @include break(760px, 1200px) {
+      display: flex;
+      align-items: center;
+    }
+    @include break(450px, 760px) {
+      display: flex;
+      flex-direction: column;
+    }
+    @include break(0, 450px) {
+      display: flex;
+      flex-direction: column;
     }
   }
 
   ul li {
     @include break(760px) {
-      float: right;
+      display: flex;
+      flex-direction: column;
     }
     padding: 10px 5px;
   }
@@ -60,6 +90,18 @@ nav {
     text-decoration: none;
     padding: 10px 5px;
     color: $darkblue;
+    @include break(1200px) {
+      font-size: 2rem;
+    }
+    @include break(760px, 1200px) {
+      font-size: 1.6rem;
+    }
+    @include break(450px, 760px) {
+      font-size: 1.2rem;
+    }
+    @include break(0, 450px) {
+      font-size: 1rem;
+    }
 
     &:hover {
       color: $yellow;
